@@ -1,18 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
+using Proyecto1.Proceso;
 
-namespace ExamenProgra.Proceso
+namespace Proyecto1
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main(string[] args)
         {
-            MenuPrincipal menu = new MenuPrincipal();
-            menu.Menu();
+            MenuPrincipal menuPrincipal = new MenuPrincipal();
+            menuPrincipal.Menu();
         }
     }
 }
