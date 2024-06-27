@@ -14,7 +14,7 @@ namespace Proyecto1.Proceso
         public int[] numerosDePago = new int[10];
         public DateTime[] fechas = new DateTime[10];
         public TimeSpan[] horas = new TimeSpan[10];
-        public string[] cedulas = new string[10];
+        public int[] cedulas = new int[10];
         public string[] nombres = new string[10];
         public string[] apellidos1 = new string[10];
         public string[] apellidos2 = new string[10];
@@ -151,7 +151,7 @@ namespace Proyecto1.Proceso
                 horas[i] = LeerHora();
 
                 Console.Write("Cédula: ");
-                cedulas[i] = Console.ReadLine();
+                cedulas[i] = LeerEntero();
 
                 nombres[i] = LeerString("Nombre: ");
 
@@ -322,7 +322,7 @@ namespace Proyecto1.Proceso
                             break;
                         case "3":
                             Console.Write("Ingrese la nueva cédula: ");
-                            cedulas[posicion] = Console.ReadLine();
+                            cedulas[posicion] = LeerEntero();
                             break;
                         case "4":
                             nombres[posicion] = LeerString("Ingrese el nombre: ");
@@ -421,7 +421,7 @@ namespace Proyecto1.Proceso
                     numerosDePago[posicion] = 0;
                     fechas[posicion] = DateTime.MinValue;
                     horas[posicion] = TimeSpan.Zero;
-                    cedulas[posicion] = null;
+                    cedulas[posicion] = 0;
                     nombres[posicion] = null;
                     apellidos1[posicion] = null;
                     apellidos2[posicion] = null;
